@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
+import { ButtonComponent } from './components/button/button.component';
+import { MatTooltip} from '@angular/material'
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'replace-services-project';
+
+  @ViewChild(ButtonComponent) buttonComponent:ButtonComponent
+
+  onClick(text:string){
+      this.buttonComponent.onClick(text);
+  }
+
 }
