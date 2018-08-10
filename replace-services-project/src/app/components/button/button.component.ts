@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,6 +7,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 export class ButtonComponent {
   
+  @Input() buttonText:string = "something";
 
   onClick=(text:string)=>{
     console.log(text);

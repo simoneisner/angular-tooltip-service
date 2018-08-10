@@ -13,6 +13,8 @@ export class AppComponent {
 
   @ViewChild(ButtonComponent) buttonComponent:ButtonComponent
 
+  buttonText = "hi";
+
   onClick(text:string){
       this.buttonComponent.onClick(text);
   }
