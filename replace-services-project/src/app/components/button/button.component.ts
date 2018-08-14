@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ToolTipComponent } from '../tooltip';
 
 @Component({
   selector: 'app-button',
@@ -10,7 +11,7 @@ export class ButtonComponent {
   @Input() buttonText:string = "something";
 
   onClick=(text:string)=>{
-    console.log(text);
+    console.log(this.buttonText);
   }
 
   constructor() { }
