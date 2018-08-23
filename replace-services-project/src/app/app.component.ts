@@ -10,7 +10,7 @@ import { MatTooltip} from '@angular/material'
 })
 export class AppComponent {
   title = 'replace-services-project';
-
+  welcomeText = "Welcome to the party";
   @ViewChild(ButtonComponent) buttonComponent:ButtonComponent
 
   buttonText = "hi";

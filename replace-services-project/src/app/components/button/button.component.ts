@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ToolTipComponent } from '../tooltip';
+//import { ToolTipComponent } from '../tooltip';
 
 @Component({
   selector: 'app-button',
