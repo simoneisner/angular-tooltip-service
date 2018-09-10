@@ -6,13 +6,17 @@ import {MatButtonModule, MatTooltipModule} from '@angular/material'
 
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
-import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { TooltipDirective } from './directives/tooltip/tool-tip.directive';
+import { TooltipContentComponent } from './components/tooltip-content/tooltip-content.component';
+import { TooltipContainerComponent } from './components/tooltip-container/tooltip-container.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    TooltipComponent
+    TooltipDirective,
+    TooltipContentComponent,
+    TooltipContainerComponent
   ],
   imports: [
     BrowserModule,
