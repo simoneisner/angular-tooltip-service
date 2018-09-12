@@ -16,7 +16,7 @@ export class TooltipDirective implements OnDestroy {
   onmouseenter(): void{
     //show tooltip
     this.id = Math.random();
-    this.tooltipService.push({
+    this.tooltipService.components.push({
       id: this.id,
       ref: this.element,
       title: this.tooltipTitle
@@ -34,7 +34,7 @@ export class TooltipDirective implements OnDestroy {
   }
   
   destroy():void{
-    const idx= this.tooltipService.findIndex
+    const idx= this.tooltipService.components.findIndex
   }
 
 }

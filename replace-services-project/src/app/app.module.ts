@@ -9,6 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TooltipDirective } from './directives/tooltip/tool-tip.directive';
 import { TooltipContentComponent } from './components/tooltip-content/tooltip-content.component';
 import { TooltipContainerComponent } from './components/tooltip-container/tooltip-container.component';
+//import { TooltipService } from './services/tooltip.service';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,14 @@ import { TooltipContainerComponent } from './components/tooltip-container/toolti
     ButtonComponent,
     TooltipDirective,
     TooltipContentComponent,
-    TooltipContainerComponent
+    TooltipContainerComponent,
+    //TooltipService
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTooltipModule
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

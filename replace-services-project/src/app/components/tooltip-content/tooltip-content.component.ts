@@ -1,5 +1,5 @@
-import { Component, AfterViewInit, HostListener } from '@angular/core';
-import { TooltipService } from '../../services/tooltip.service';
+import { Component, AfterViewInit, HostListener, Input } from '@angular/core';
+//import { TooltipService } from '../../services/tooltip.service';
 
 @Component({
   selector: 'app-tooltip-content',
@@ -8,8 +8,10 @@ import { TooltipService } from '../../services/tooltip.service';
 })
 export class TooltipContentComponent implements AfterViewInit {
 
-  constructor(private tooltipService:TooltipService) { }
+  @Input() title: string;
+  @Input() ref: any;
 
+0.
   ngAfterViewInit() {
     //position based on `ref`
   }
@@ -18,5 +20,9 @@ export class TooltipContentComponent implements AfterViewInit {
   onWindowResize(): void{
     //update position basedf on `ref`
   }
+
+  // constructor(private tooltipService:TooltipService){
+
+  // }
 
 }

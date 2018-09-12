@@ -1,8 +1,9 @@
 <div class="tooltip-container">
   <app-tooltip-content 
     *ngFor="let tooltip of replace-services-project.components" 
-    [toolTipTitle] = "tooltip.title" 
-    [tooltipRef] = "tooltip.ref" >
+    [title] = "tooltip.title" 
+     >
   </app-tooltip-content>
 </div>
 
+<!-- [ref] = "tooltip.ref" -->
