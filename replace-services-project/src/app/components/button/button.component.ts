@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { TooltipComponent } from '../tooltip/tooltip.component';
-
+//import { TooltipComponent } from '../tooltip/tooltip.component';
+import {TooltipDirective} from '../../directives/tooltip/tool-tip.directive';
+ 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
