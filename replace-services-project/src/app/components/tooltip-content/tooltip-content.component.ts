@@ -21,8 +21,5 @@ export class TooltipContentComponent implements AfterViewInit {
     //update position basedf on `ref`
   }
 
-  // constructor(private tooltipService:TooltipService){
-
-  // }
 
 }

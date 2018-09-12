@@ -9,6 +9,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TooltipDirective } from './directives/tooltip/tool-tip.directive';
 import { TooltipContentComponent } from './components/tooltip-content/tooltip-content.component';
 import { TooltipContainerComponent } from './components/tooltip-container/tooltip-container.component';
+import { HttpModule } from '@angular/http';
 //import { TooltipService } from './services/tooltip.service';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { TooltipContainerComponent } from './components/tooltip-container/toolti
     BrowserAnimationsModule,
     MatButtonModule,
     MatTooltipModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

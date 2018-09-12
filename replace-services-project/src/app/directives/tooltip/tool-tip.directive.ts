@@ -34,7 +34,11 @@ export class TooltipDirective implements OnDestroy {
   }
   
   destroy():void{
-    const idx= this.tooltipService.components.findIndex
+    const idx= this.tooltipService.components.findIndex((t) => {
+      return t.id === this.id;
+    });
+
+    this.tooltipService.components.splice(idx,1);
   }
 
 }
