@@ -17,12 +17,12 @@ export class TooltipDirective implements OnDestroy {
     this.toolTipText = el.nativeElement.value;
   }
 
-
+  @Input() toolTipTitle:string = "";
 
   @HostListener('click') 
   onclick(): void{
-    console.log("fart");
-    this.el.nativeElement.title = "kskfdfk"
+    console.log("button clicked");
+    this.el.nativeElement.title = this.toolTipTitle;
   }
 
   ngOnDestroy(): void{
