@@ -9,24 +9,20 @@ export class TooltipDirective implements OnDestroy {
 
   //@Input() tooltipTitle: string = "";
   private id: number;
-
+  private toolTipText:string = "hello";
   //constructor(private tooltipService:TooltipService, private element:ElementRef) { }
 
-  @HostListener('mouseenter') 
-  onmouseenter(): void{
-    //show tooltip
-    this.id = Math.random();
-    // this.tooltipService.components.push({
-    //   id: this.id,
-    //   ref: this.element,
-    //   title: this.tooltipTitle
-      
-    // })
+
+  constructor(private el:ElementRef){
+    this.toolTipText = el.nativeElement.value;
   }
 
-  @HostListener('mouseleave') onmouseleave(): void{
-    //hide tooltip
-    
+
+
+  @HostListener('click') 
+  onclick(): void{
+    console.log("fart");
+    this.el.nativeElement.title = "kskfdfk"
   }
 
   ngOnDestroy(): void{
